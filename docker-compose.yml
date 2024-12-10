@@ -83,9 +83,9 @@ services:
             ### Bind-mount source for /var/lib/overleaf/data/compiles inside the container.
             SANDBOXED_COMPILES_HOST_DIR: '/home/overleaf/sharelatex_data/data/compiles'
             SANDBOXED_COMPILES_CONTAINER_TIMEOUT: 3600000
-            TEX_LIVE_DOCKER_IMAGE: "ghcr.io/lcpu-club/sharelatex-base:2024.1"
-            ALL_TEX_LIVE_DOCKER_IMAGES: "ghcr.io/lcpu-club/sharelatex-base:2024.1,ghcr.io/lcpu-club/sharelatex-base:2022.1,ghcr.io/lcpu-club/sharelatex-base:2020.1"
-            ALL_TEX_LIVE_DOCKER_IMAGE_NAMES: "TeX Live 2024,TeX Live 2022,TeX Live 2020"
+            TEX_LIVE_DOCKER_IMAGE: "docker.io/everything411/sharelatex-base:2024.1"
+            ALL_TEX_LIVE_DOCKER_IMAGES: "docker.io/everything411/sharelatex-base:2024.1,docker.io/everything411/sharelatex-base:2022.1,docker.io/everything411/sharelatex-base:2020.1,ghcr.io/lcpu-club/sharelatex-base:2024.1,ghcr.io/lcpu-club/sharelatex-base:2022.1,ghcr.io/lcpu-club/sharelatex-base:2020.1"
+            ALL_TEX_LIVE_DOCKER_IMAGE_NAMES: "TeX Live 2024 with MS fonts,TeX Live 2022 with MS fonts,TeX Live 2020 with MS fonts,TeX Live 2024,TeX Live 2022,TeX Live 2020"
             DOCKER_RUNNER: true
             DOCKER_USER: "www-data"
 
